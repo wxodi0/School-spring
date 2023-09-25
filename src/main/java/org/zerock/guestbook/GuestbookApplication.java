@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.zerock.guestbook.sample.School;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,11 +21,12 @@ public class GuestbookApplication {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(GuestbookApplication.class, args);
 		String[] beanNames = applicationContext.getBeanDefinitionNames();
 
-//		List<String> list = new ArrayList<>();
-
 		Arrays.stream(beanNames)
 				.forEach(e -> {
 					log.info("Bean Name : {}" , e);
 				});
+		School school = new School();
+		applicationContext.getBean("school",School.class);
+		log.info("school : {}",school);
 	}
 }
