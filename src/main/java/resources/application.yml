@@ -1,10 +1,10 @@
 server:
-  port:8030
+  port: 9070
 
 spring:
   datasource:
-    driver-class-name : com.mysql.jdbc.Driver
-    url : jdbc=jdbc.mysql://localhost:3306/BOOTEX
+    driver-class-name : com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/BOOTEX
     username : bootuser
-    password : spring.datasource.password=wjdxodid06!
+    password : wjdxodid06!
 
