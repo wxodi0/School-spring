@@ -6,12 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.zerock.guestbook.sample.School;
+import org.zerock.guestbook.sample.Restaurant;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @Slf4j
@@ -24,9 +21,13 @@ public class GuestbookApplication {
 		Arrays.stream(beanNames)
 				.forEach(e -> {
 					log.info("Bean Name : {}" , e);
+
 				});
 		School school = new School();
 		applicationContext.getBean("school",School.class);
-		log.info("school : {}",school);
+		log.info("school : {}", school);
+
+		Restaurant restaurant = applicationContext.getBean("restaurant" , Restaurant.class);
+		log.info("restaurant : {}", restaurant);
 	}
 }
