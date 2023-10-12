@@ -13,6 +13,7 @@ public class HotelServiceTest{
     void test () {
         System.out.println("1=================");
         System.out.println(hotelService);
+        hotelService.print();
         System.out.println("2=================");
     }
 }
