@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class HotelServiceTest{
     @Autowired
     private HotelService hotelService;
+
     @Test
     void test () {
         System.out.println("1=================");

@@ -21,7 +21,6 @@ public class GuestbookApplication {
 		Arrays.stream(beanNames)
 				.forEach(e -> {
 					log.info("Bean Name : {}" , e);
-
 				});
 		School school = new School();
 		applicationContext.getBean("school",School.class);
