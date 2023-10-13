@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @ToString
 public class Restaurant {
 
-    @Autowired
-    private Chef chef;
+        private Chef chef;
+
 }
 
