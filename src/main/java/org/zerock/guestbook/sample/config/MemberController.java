@@ -20,9 +20,10 @@ public class MemberController {
     }
 
     @PostMapping("/member")
-    public String joinMember(Member member) throws Exception {
-
-        return null;
+    public long joinMember(MemberFrom from) throws Exception {
+        Member member = new Member();
+        member.setName(from.getName());
+        return memberService.join(member);
     }
 
     @GetMapping("/member/{id}")
