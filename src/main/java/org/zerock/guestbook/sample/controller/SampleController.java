@@ -1,4 +1,4 @@
-package org.zerock.guestbook.sample.config;
+package org.zerock.guestbook.sample.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

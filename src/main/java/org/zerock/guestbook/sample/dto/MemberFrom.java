@@ -1,4 +1,4 @@
-package org.zerock.guestbook.sample.config;
+package org.zerock.guestbook.sample.dto;
 
 public class MemberFrom {
     private String name;
