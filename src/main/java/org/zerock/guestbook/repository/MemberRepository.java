@@ -1,7 +1,6 @@
-package org.zerock.guestbook.sample.repository;
+package org.zerock.guestbook.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.zerock.guestbook.sample.dto.Member;
+import org.zerock.guestbook.dto.Member;
 
 import java.util.List;
 import java.util.Optional;

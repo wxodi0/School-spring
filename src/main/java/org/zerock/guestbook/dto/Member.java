@@ -1,4 +1,4 @@
-package org.zerock.guestbook.sample.dto;
+package org.zerock.guestbook.dto;
 
 import jakarta.persistence.*;
 import lombok.*;
